@@ -1,7 +1,7 @@
 {
     "name": "lazy-image-react",
     "author": "Ayush Walia <krjean@gmail.com>",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Image (lazy) loader for React.js",
     "main": "dist/index.js",
     "keywords": [
