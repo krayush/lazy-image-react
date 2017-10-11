@@ -1,0 +1,10 @@
+/node_modules
+/bower_components
+/dist
+/build
+/tmp
+.idea/
+*.log
+*.iml
+.vscode
+.DS_Store
