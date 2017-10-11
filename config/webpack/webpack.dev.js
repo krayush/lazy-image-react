@@ -3,10 +3,10 @@ const webpackMerge = require('webpack-merge');
 const config = require('./webpack.common')();
 
 module.exports = function () {
-  return webpackMerge(config, {
-    output: {
-      filename: 'index.js',
-      path: helpers.getAbsolutePath('dist')
-    }
-  });
+    return webpackMerge(config, {
+        output: {
+            filename: '[name].js',
+            path: helpers.getAbsolutePath('dist')
+        }
+    });
 };
