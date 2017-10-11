@@ -1,5 +1,5 @@
 {
-    "name": "lazy-image",
+    "name": "lazy-image-react",
     "author": "Ayush Walia <krjean@gmail.com>",
     "version": "1.0.0",
     "description": "Image (lazy) loader for React.js",
