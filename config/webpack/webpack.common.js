@@ -1,11 +1,9 @@
 // Common Webpack configuration used by webpack.config.development and webpack.config.production
-
 const path = require('path');
 const webpack = require('webpack');
 const webpackConfig = require('../utils/webpack-config')();
 const helpers = require('../utils/helpers');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isDevServer = helpers.isWebpackDevServer();
 const environment = helpers.getEnvironment();
 
@@ -43,10 +41,6 @@ module.exports = function () {
             ], {
                 root: helpers.getAbsolutePath('/')
             }),
-            new CopyWebpackPlugin([{
-                from: helpers.getAbsolutePath('/assets/**/*.*'),
-                to: helpers.getAbsolutePath('/dist')
-            }]),
             new webpack.DefinePlugin({
                 isDevServer,
                 "process.env": {

@@ -3,7 +3,7 @@ var helpers = require("./helpers");
 module.exports = function () {
   var environment = helpers.getEnvironment();
   var entryPoints = {
-      bundle: helpers.getAbsolutePath("index.js")
+      bundle: helpers.getAbsolutePath("scripts/lazy-image.js")
     },
     devServerConfig = {
       host: "localhost",
